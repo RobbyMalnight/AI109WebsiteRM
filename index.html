@@ -30,20 +30,14 @@
             padding: 0.8rem 1.5rem;
         }
 
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 1.5rem;
-        }
-
-        nav ul li a {
+        nav a {
             color: #fff;
             text-decoration: none;
             font-weight: 500;
             transition: color 0.2s;
         }
 
-        nav ul li a:hover {
+        nav a:hover {
             color: var(--accent);
         }
 
@@ -67,31 +61,25 @@
             font-size: 0.9rem;
             color: #777;
         }
-
-        /* Header title */
-        .page-title {
-            text-align: center;
-            font-size: 2.5rem;
-            margin: 0.5rem 0;
-        }
     </style>
 </head>
 <body>
-    <h1 class="page-title">Robert Malnight AI 109</h1>
-
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-        </ul>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
     </nav>
 
     <div class="container">
-        <h1>Lorem Ipsum</h1>
-        <p>This site is styled with CSS only.</p>
+        <h1>Welcome to my project site for AI109!</h1>
+        <p>This is a simple website created for the AI109 course. You can navigate to the different parts of the site using the following links:</p>
+        <ul>
+            <li><a href="index.html">Home</a></li> <p> which will take you to this page.</p>
+            <li><a href="about.html">About</a></li> <p> which will take you to the page about Me.</p>
+            <li><a href="projects.html">Projects</a></li> <p> which will take you to the page with any projects that we make during the year</p>
+        </ul>
     </div>
-
+    
     <footer>
         &copy; 2025 AI109WebsiteRM
     </footer>

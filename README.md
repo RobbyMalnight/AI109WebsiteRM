@@ -1,6 +1,6 @@
 # AI109WebsiteRM
 
-A simple static site with a home page and an about page, built as a class project.
+This is the my website for the AI109 class.
 
 ## Pages
 - **Home** (`index.html`) – lorem ipsum welcome page.
