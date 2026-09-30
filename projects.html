@@ -30,15 +30,20 @@
             padding: 0.8rem 1.5rem;
         }
 
-        nav a {
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav ul li a {
             color: #fff;
             text-decoration: none;
             font-weight: 500;
             transition: color 0.2s;
-            margin-right: 1.5rem;
         }
 
-        nav a:hover {
+        nav ul li a:hover {
             color: var(--accent);
         }
 
@@ -63,7 +68,7 @@
             color: #777;
         }
 
-        /* ---- Projects page specific styles ---- */
+        /* Projects page specific styles */
         .page-title {
             text-align: center;
             font-size: 2.5rem;
@@ -102,10 +107,14 @@
     </style>
 </head>
 <body>
+    <h1 class="page-title">Robert Malnight AI 109</h1>
+
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
     </nav>
 
     <h1 class="page-title">Projects</h1>
