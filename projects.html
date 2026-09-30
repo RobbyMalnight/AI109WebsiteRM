@@ -8,7 +8,7 @@
         :root {
             --primary: #2c3e50;
             --accent: #e74c3c;
-            --bg: #f4f7f6;
+            --bg: #ffffff;
             --text: #333;
         }
 
@@ -20,8 +20,7 @@
 
         body {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            /* fun background */
-            background: linear-gradient(135deg, #ff9a9e 0%, #fecfcf 100%);
+            background: var(--bg);
             color: var(--text);
             line-height: 1.6;
         }
@@ -36,6 +35,7 @@
             text-decoration: none;
             font-weight: 500;
             transition: color 0.2s;
+            margin-right: 1.5rem;
         }
 
         nav a:hover {
@@ -62,22 +62,63 @@
             font-size: 0.9rem;
             color: #777;
         }
+
+        /* ---- Projects page specific styles ---- */
+        .page-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .description {
+            margin-bottom: 2rem;
+        }
+
+        .black-box {
+            background-color: #000;
+            color: #fff;
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .text-box {
+            flex: 1;
+        }
+
+        .image-box {
+            flex: 1;
+            background: #555;
+            height: 200px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 1.2rem;
+        }
     </style>
 </head>
 <body>
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="projects.html" style="font-weight:bold; color:var(--accent);">Projects</a>
+        <a href="projects.html">Projects</a>
     </nav>
 
-    <div class="container">
-        <h1>Projects</h1>
+    <h1 class="page-title">Projects</h1>
 
-        <section>
-            <h2>Assignment 3: Javascript game</h2>
-            <p>coming soon</p>
-        </section>
+    <div class="description">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+
+    <div class="black-box">
+        <div class="text-box">
+            <p>Assignment 3: Javascript game</p>
+        </div>
+        <div class="image-box">Coming soon</div>
     </div>
 
     <footer>
