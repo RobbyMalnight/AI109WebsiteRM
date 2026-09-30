@@ -10,6 +10,8 @@
             --accent: #e74c3c;
             --bg: #f4f7f6;
             --text: #333;
+            --link-color: #e0e0e0;
+            --link-hover: #fff;
         }
         * {
             box-sizing: border-box;
@@ -18,12 +20,9 @@
         }
         body {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            /* Starry background using multiple radial gradients */
+            /* Simplified uniform background */
             background:
-                radial-gradient(circle at 25% 20%, rgba(255,255,255,0.15) 0%, transparent 50%),
-                radial-gradient(circle at 75% 80%, rgba(255,255,255,0.12) 0%, transparent 50%),
-                radial-gradient(circle at 40% 60%, rgba(255,255,255,0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 40%, rgba(255,255,255,0.08) 0%, transparent 50%),
+                radial-gradient(circle at center, rgba(255,255,255,0.15) 0%, transparent 50%),
                 #0d0d0d;
             color: #f5f5f5;
             line-height: 1.6;
@@ -36,7 +35,7 @@
             gap: 1.5rem;
         }
         nav a {
-            color: #fff;
+            color: var(--link-hover);
             text-decoration: none;
             font-weight: 500;
             transition: color 0.2s;
@@ -52,6 +51,15 @@
             border-radius: 16px;
             backdrop-filter: blur(10px);
             color: #f5f5f5;
+        }
+        .container a {
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .container a:hover {
+            color: var(--link-hover);
         }
         h1 {
             margin-bottom: 0.5rem;
