@@ -11,52 +11,54 @@
             --bg: #f4f7f6;
             --text: #333;
         }
-
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
-
         body {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background: var(--bg);
-            color: var(--text);
+            /* Starry background using multiple radial gradients */
+            background:
+                radial-gradient(circle at 25% 20%, rgba(255,255,255,0.15) 0%, transparent 50%),
+                radial-gradient(circle at 75% 80%, rgba(255,255,255,0.12) 0%, transparent 50%),
+                radial-gradient(circle at 40% 60%, rgba(255,255,255,0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 40%, rgba(255,255,255,0.08) 0%, transparent 50%),
+                #0d0d0d;
+            color: #f5f5f5;
             line-height: 1.6;
         }
-
+        
         nav {
             background: var(--primary);
             padding: 0.8rem 1.5rem;
             display: flex;
             gap: 1.5rem;
         }
-
         nav a {
             color: #fff;
             text-decoration: none;
             font-weight: 500;
             transition: color 0.2s;
         }
-
         nav a:hover {
             color: var(--accent);
         }
-
         .container {
             max-width: 800px;
             margin: 2rem auto;
-            padding: 0 1rem;
+            padding: 2rem 1.5rem;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+            color: #f5f5f5;
         }
-
         h1 {
             margin-bottom: 0.5rem;
         }
-
         p {
             margin-bottom: 1rem;
         }
-
         footer {
             text-align: center;
             padding: 2rem;
@@ -73,7 +75,6 @@
         <a href="about.html">About</a>
         <a href="projects.html">Projects</a>
     </nav>
-
     <div class="container">
         <h1>Welcome to my project site for AI109!</h1>
         <p>This is a simple website created for the AI109 course. You can navigate to the different parts of the site using the following links:</p>
